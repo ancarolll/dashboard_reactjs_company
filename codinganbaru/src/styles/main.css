@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+       url('../assets//fonts/Poppins-Regular.woff') format('woff'),
+       url('../assets/fonts/Poppins-Regular.ttf') format('truetype'); /* Fallback untuk TTF */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/Poppins-Medium.woff2') format('woff2'),
+       url('../assets/fonts/Poppins-Medium.woff') format('woff'),
+       url('../assets/fonts/Poppins-Medium.ttf') format('truetype'); /* Fallback untuk TTF */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Poppins-Bold.woff2') format('woff2'),
+       url('../assets/fonts/Poppins-Bold.woff') format('woff'),
+       url('../assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Fallback untuk TTF */
+  font-display: swap;
+}
+
+*{
+    font-family:'Poppins', sans-serif;
+}
+
+:root {
+    --tar-color: #DC091A;
+    --background-tar-color: #FFF7F8;
+    --shading-tar-color: #FEDCDE;
+    --font-tar-maroon-color: #800000;
+    --black-tar-color: #000000;
+    --ash-60-oppacity: #666666b7;
+    --white-tar-color: #FFFFFF;
+    --blue-tar-color: #0EA5E9;
+    --green-tar-color: #28A745;
+    --yellow-tar-color: #FFC107;
+    --ash-tar-color: #B6B6B6;
+    --link-tar-color: #456EE5;
+    --link-click-tar-color: #2E46AC;
+    --button-tar-color: #696CFF;
+  }
+
+.no-underline {
+    text-decoration: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+.btn-aside {
+    color: var(--black-tar-color);
+    opacity: 60%;
+    background-color: var(--white-tar-color);
+    transition: all 0.3s ease;
+}
+.btn-aside:hover{
+    color:#000000;
+    opacity: 100%;
+    background-color: var(--shading-tar-color);
+    font-weight: bold;
+}
+
+.btn-aside.active {
+    color:#000000;
+    opacity: 100%;
+    background-color: var(--shading-tar-color);
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: var(--black-tar-color);
+    border:4px solid var(--font-tar-maroon-color);
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    color: var(--white-tar-color);
+    background-color: var(--font-tar-maroon-color);
+    border: 4px solid var(--black-tar-color);
+}
+
+.btn-back {
+    color: var(--tar-color);
+    border: 2px solid var(--tar-color);
+}
+
+.btn-back:hover{
+    color: var(--white-tar-color);
+    border: 2px solid var(--white-tar-color);
+}
+
+.text-color {
+    color: var(--font-tar-maroon-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat-box {
+ color: var(--font-tar-maroon-color);
+}
+.btn_addempdata {
+ color: white;
+ border: 2px medium;
+ font-weight:400;
+}
+.btn_addempdata:hover{
+    color: var(--ash-tar-color);
+    border: 2px medium var(--ash-tar-color);
+}
+.bigfont {
+    color: var(--font-tar-maroon-color);
+    font-weight: 900;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease; /* Efek transisi */
+}
+
+.overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tabel-header-th { /* Atau nama class yang Anda inginkan */
+  padding: 0.75rem 1.5rem; /* px-6 py-3 dalam rem */
+  text-align: left;
+  font-size: 0.75rem; /* text-xs dalam rem */
+  font-weight: 500; /* font-medium */
+  color: #71717a; /* text-gray-500 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider, sedikit disesuaikan karena tracking-wider biasanya terlalu lebar */
+}
+
+.nw { /* Anda bisa mengganti nama class ini sesuai kebutuhan */
+  padding: 1rem 1.5rem; /* Konversi px ke rem (asumsi font-size root 16px) */
+  white-space: nowrap; 
+}
+
+.reg2x-budget-container {
+  font-family: 'Arial', sans-serif;
+}
+
+.reg2x-budget-container .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reg2x-budget-container .ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.reg2x-budget-container .ant-statistic-content {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reg2x-budget-container .ant-statistic-content-value {
+  color: #1890ff;
+}
+
+.reg2x-budget-container .ant-statistic-content-value.ant-statistic-content-value-danger {
+  color: #f5222d;
+}
+
+.reg2x-budget-container .ant-statistic-content-value.ant-statistic-content-value-success {
+  color: #52c41a;
+}
+
+.reg2x-budget-container .ant-table-thead > tr > th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.reg2x-budget-container .ant-table-tbody > tr:hover > td {
+  background-color: #f0f7ff;
+}
+
+.reg2x-budget-container .budget-info {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.reg2x-budget-container .budget-info p {
+  margin-bottom: 8px;
+}
+
+.reg2x-budget-container .budget-info p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reg2x-budget-container .ant-card-extra {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  
+  .reg2x-budget-container .ant-statistic {
+    margin-bottom: 20px;
+  }
+}
